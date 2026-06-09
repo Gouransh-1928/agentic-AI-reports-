@@ -34,19 +34,20 @@ class Solution:
 
         return dummy.next
 
+        #example
 # l1 = [3,6,5]
 # l2 = [2,6,3]
 
-l1 = ListNode(5)
-l1.next = ListNode(6)
-l1.next.next = ListNode(3)
+#l1 = ListNode(5)
+#l1.next = ListNode(6)
+#l1.next.next = ListNode(3)
 
-l2 = ListNode(3)
-l2.next = ListNode(6)
-l2.next.next = ListNode(2)
+#l2 = ListNode(3)
+#l2.next = ListNode(6)
+#l2.next.next = ListNode(2)
 
-result = Solution().addTwoNumbers(l1, l2)
+#result = Solution().addTwoNumbers(l1, l2)
 
-while result:
-    print(result.val, end=" ")
-    result = result.next
+#while result:
+ #   print(result.val, end=" ")
+  #  result = result.next
