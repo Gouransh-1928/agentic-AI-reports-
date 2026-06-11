@@ -1,7 +1,8 @@
 # agentic-AI-reports-
 everyday tasks report
 
-problem 1
+problem 1 - sum
+
 Two linked lists represent two numbers.
 Each node contains one digit.
 The digits are stored in reverse order.
@@ -57,3 +58,34 @@ Otherwise:
 Add the current numeral value.
 Move forward by 1 position (i + 1).
 Stop recursion when the index reaches the end of the string.
+
+problem 4 -  Longest Palindromic Substring
+
+Given a string `s`, return the longest palindromic substring in `s`.
+
+## Approach
+
+This solution uses the **Expand Around Center** technique.
+
+For every character in the string:
+
+1. Treat it as the center of an odd-length palindrome.
+2. Treat it and the next character as the center of an even-length palindrome.
+3. Expand outward while the characters match.
+4. Keep track of the longest palindrome found.
+
+## Algorithm
+
+1. Initialize an empty string `longest`.
+2. Loop through each character in the string.
+3. Check for odd-length palindromes.
+4. Check for even-length palindromes.
+5. Update `longest` whenever a larger palindrome is found.
+6. Return `longest`.
+Example 
+Input:
+s = "babad"
+Output:
+"bab"
+
+
