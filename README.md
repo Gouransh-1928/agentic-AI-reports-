@@ -88,4 +88,44 @@ s = "babad"
 Output:
 "bab"
 
+problem 5:Longest Common Prefix
+Write a function to find the longest common prefix string among an array of strings. 
+If there is no common prefix, return an empty string "".
+
+Example
+
+Input:
+
+["flower", "flow", "flight"]
+
+Output:
+
+"fl"
+Approach
+Take the first word as the initial prefix.
+Compare it with every other word.
+If a word does not start with the current prefix, remove the last character from the prefix.
+Continue until all words share the same prefix.
+If the prefix becomes empty, return "".
+
+problme 2: Container With Most Water
+You are given an integer array height.
+
+Find two lines that together with the x-axis form a container such that the container stores the maximum amount of water.
+Return the maximum amount of water the container can store.
+
+Approach
+
+Use the Two Pointer technique.
+
+Place one pointer at the beginning of the array.
+Place another pointer at the end.
+Calculate the area formed by the two lines.
+Move the pointer pointing to the smaller height.
+Keep track of the maximum area found.
+
+The area is calculated as:
+
+Area = Width × Minimum Height
+
 
