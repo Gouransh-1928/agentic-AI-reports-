@@ -1,31 +1,34 @@
 # agentic-AI-reports-
 everyday tasks report
 
-problem 1 - sum
+## ***problem 1 - sum***
 
 Two linked lists represent two numbers.
 Each node contains one digit.
 The digits are stored in reverse order.
 Add the two numbers and return the result as a linked list.
 
-Approach
-Traverse both linked lists together.
-Add the digits at the current nodes.
-Keep track of carry.
-Create a new node for each result digit.
-Continue until both lists and carry are finished.
+**Approach**
 
-Problem 2: Two Sum
+1.Traverse both linked lists together.
+2.Add the digits at the current nodes.
+3.Keep track of carry.
+4.Create a new node for each result digit.
+5.Continue until both lists and carry are finished.
+
+## _**Problem 2: Two Sum**_
 
 Given an array of numbers and a target value, find the indices of the two numbers whose sum equals the target.
 
-Approach
+ **Approach**
+ 
 Use two loops.
 Pick one number at a time.
 Compare it with every number after it.
 If the sum equals the target, return their indices.
 
-Problem 3:Roman Numeral to Integer (Recursion)
+
+ ##  _**Problem 3:Roman Numeral to Integer (Recursion)**_
 
 Given a Roman numeral string, convert it into an integer.
 
@@ -48,7 +51,9 @@ XL = 40
 XC = 90
 CD = 400
 CM = 900
-Approach
+
+**Approach**
+
 Create a dictionary to store Roman numeral values.
 Use a recursive function solve(i) where i is the current index.
 If the current numeral is smaller than the next numeral, it is a special case:
@@ -59,11 +64,11 @@ Add the current numeral value.
 Move forward by 1 position (i + 1).
 Stop recursion when the index reaches the end of the string.
 
-problem 4 -  Longest Palindromic Substring
+## _**problem 4 -  Longest Palindromic Substring**_
 
 Given a string `s`, return the longest palindromic substring in `s`.
 
-## Approach
+ **Approach**
 
 This solution uses the **Expand Around Center** technique.
 
@@ -74,7 +79,7 @@ For every character in the string:
 3. Expand outward while the characters match.
 4. Keep track of the longest palindrome found.
 
-## Algorithm
+**Algorithm**
 
 1. Initialize an empty string `longest`.
 2. Loop through each character in the string.
@@ -88,7 +93,7 @@ s = "babad"
 Output:
 "bab"
 
-problem 5:Longest Common Prefix
+## **_problem 5:Longest Common Prefix_**
 Write a function to find the longest common prefix string among an array of strings. 
 If there is no common prefix, return an empty string "".
 
@@ -101,20 +106,22 @@ Input:
 Output:
 
 "fl"
-Approach
+
+**Approach**
+
 Take the first word as the initial prefix.
 Compare it with every other word.
 If a word does not start with the current prefix, remove the last character from the prefix.
 Continue until all words share the same prefix.
 If the prefix becomes empty, return "".
 
-problme 2: Container With Most Water
+## _**problme 6: Container With Most Water**_
 You are given an integer array height.
 
 Find two lines that together with the x-axis form a container such that the container stores the maximum amount of water.
 Return the maximum amount of water the container can store.
 
-Approach
+ **Approach**
 
 Use the Two Pointer technique.
 
