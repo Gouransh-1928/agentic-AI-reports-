@@ -135,4 +135,28 @@ The area is calculated as:
 
 Area = Width × Minimum Height
 
+## _problem 6-Rotting Oranges_
+You are given an `m x n` grid where:
+* `0` represents an empty cell.
+* `1` represents a fresh orange.
+* `2` represents a rotten orange.
+
+Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
+Return the minimum number of minutes required until no fresh orange remains. If it is impossible to rot all oranges, return `-1`.
+
+---
+** Approach**
+
+This problem is solved using **Multi-Source Breadth-First Search (BFS)**
+
+_**problem 7 - Merge Two Sorted Lists (using Asyncio)**_
+Given the heads of two sorted linked lists, merge them into a single sorted linked list and return the head of the merged list.
+The merged list should be formed by splicing together the nodes of the first two lists.
+
+ **Approach**
+This implementation demonstrates how Python's `asyncio` library can be integrated into a linked-list problem.
+**Note**
+For this specific problem, a standard synchronous implementation is more efficient because linked-list traversal is CPU-bound and inherently sequential. The asyncio version is provided for educational purposes to demonstrate asynchronous programming concepts.
+
+
 
