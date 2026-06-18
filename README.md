@@ -159,4 +159,35 @@ This implementation demonstrates how Python's `asyncio` library can be integrate
 For this specific problem, a standard synchronous implementation is more efficient because linked-list traversal is CPU-bound and inherently sequential. The asyncio version is provided for educational purposes to demonstrate asynchronous programming concepts.
 
 
+_**(D7)problem 8 -Letter Combinations of a Phone Number**_
+Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.
+
+The mapping of digits to letters is the same as on a traditional telephone keypad:
+
+Digit	Letters
+2	abc
+3	def
+4	ghi
+5	jkl
+6	mno
+7	pqrs
+8	tuv
+9	wxyz
+
+Return the answer in any order.
+
+**Approach**
+This solution uses the Backtracking Algorithm to generate all possible combinations.
+
+Steps
+1.Create a dictionary that maps each digit to its corresponding letters.
+2.Start from the first digit.
+3.Choose one letter from the current digit.
+4.Recursively move to the next digit.
+5.When a complete combination is formed, add it to the result list.
+6.Continue exploring all possible letter combinations.
+
+The implementation also includes try-except handling to detect invalid digits that are not present in the phone keypad mapping.
+
+
 
