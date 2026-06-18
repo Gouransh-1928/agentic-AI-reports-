@@ -135,7 +135,7 @@ The area is calculated as:
 
 Area = Width × Minimum Height
 
-## _problem 6-Rotting Oranges_
+## _(D6)problem 6-Rotting Oranges_
 You are given an `m x n` grid where:
 * `0` represents an empty cell.
 * `1` represents a fresh orange.
@@ -149,7 +149,7 @@ Return the minimum number of minutes required until no fresh orange remains. If 
 
 This problem is solved using **Multi-Source Breadth-First Search (BFS)**
 
-_**problem 7 - Merge Two Sorted Lists (using Asyncio)**_
+_**(D7)problem 7 - Merge Two Sorted Lists (using Asyncio)**_
 Given the heads of two sorted linked lists, merge them into a single sorted linked list and return the head of the merged list.
 The merged list should be formed by splicing together the nodes of the first two lists.
 
